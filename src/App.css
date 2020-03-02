@@ -1,17 +1,44 @@
-.title {
+h1 {
   text-align: center;
+  padding: 2em 0;
 }
 
-.title.red {
-  color: red;
+h2 {
+  padding: 1em 0;
 }
 
-.title.blue {
-  color: blue;
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+    "hd hd"
+    "mn sd"
+    "ft ft"
+  ;
+  grid-gap: 1em;
+}
+
+header {
+  grid-area: hd;
+}
+
+main {
+  grid-area: mn;
+}
+
+aside {
+  grid-area: sd;
+  padding: 2em 0;
+}
+
+footer {
+  grid-area: ft;
+  text-align: center;
+  padding: 5em 0;
 }
 
 .card-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
 }
