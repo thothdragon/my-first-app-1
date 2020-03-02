@@ -2,6 +2,14 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import './App.css';
 
+const data = [
+  { title: "Bonjour les amis!" },
+  { title: "J'aime les frites au ketchup" },
+  { title: "Il fait pas très beau dehors" },
+  { title: "Quand est-ce qu'on mange?" },
+  { },
+];
+
 const Title = (props) =>
   <h1 className={`title ` + props.colorName}>
     {props.children}
@@ -35,12 +43,10 @@ function App() {
         </p>
       </Subtitle>
 
-      <div class="card-list">
-        <MyCard title="Bonjour les amis!" />
-        <MyCard title="J'aime les frites" />
-        <MyCard title="Il fait pas très beau dehors" />
-        <MyCard title="Quand est-ce qu'on mange?" />
-        <MyCard />
+      <div className="card-list">
+        {data.map( (item, index) =>
+          <MyCard key={`card${index}`} title={item.title} />
+        )}
       </div>
     </div>
   );
