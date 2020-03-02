@@ -15,7 +15,7 @@ h2 {
     "mn sd"
     "ft ft"
   ;
-  grid-gap: 1em;
+  gap: 1em;
 }
 
 header {
@@ -40,5 +40,5 @@ footer {
 .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
+  gap: 1em;
 }
