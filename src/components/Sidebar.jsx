@@ -6,7 +6,7 @@ const Sidebar = () =>
   <aside>
     <ListGroup>
       {data.map( (item, index) =>
-        <ListGroup.Item>{item.title}</ListGroup.Item>
+        <ListGroup.Item key={`article-link${index}`}>{item.title}</ListGroup.Item>
       )}
     </ListGroup>
   </aside>
