@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, NavbarBrand } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () =>
@@ -27,6 +27,6 @@ const Header = () =>
       </Navbar.Collapse>
     </Navbar>
   </header>
-;
+  ;
 
 export default Header;
